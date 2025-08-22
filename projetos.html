@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8492e63a54.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=PT+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>TrAce - Projetos</title>
+    <link rel="stylesheet" href="style-projetos.css" />
+    <link rel="stylesheet" href="style-universal.css" />
+  </head>
+  <body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <head>
+      <!-- Adicionando o link para o Font Awesome, que fornece ícones como o da lupa para a barra de pesquisa -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      />
+    </head>
+
+    <!-- Barra de navegação -->
+    <header class="navbar">
+      <nav>
+        <div class="logo">
+          <!-- Logo da página, clicável, que redireciona para a página principal (inicio.html) -->
+          <a href="inicio.html">
+            <img
+              class="logo-img"
+              src="assets/TraCe_logo_placeholder.png"
+              alt="Logo"
+            />
+          </a>
+        </div>
+
+        <!-- Lista de itens de navegação -->
+        <ul class="navbar-list">
+          <li><a href="inicio.html">Início</a></li>
+
+          <!-- Menu TrAce com submenu -->
+          <li class="submenu">
+            <a href="#">TrAce</a>
+            <ul class="submenu-list">
+              <!-- Submenus com links para páginas sobre o grupo e os membros -->
+              <li><a href="trace-sobre-nos.html">Sobre nós</a></li>
+              <li><a href="trace-membros.html">Membros</a></li>
+            </ul>
+          </li>
+
+          <!-- Menu Projetos com submenu -->
+          <li class="submenu">
+            <a href="projetos.html">Projetos</a>
+            <ul class="submenu-list">
+              <!-- Submenus com links para projetos específicos -->
+              <li><a href="projetos-livro-1.html">Príncipe Lindworm</a></li>
+              <li><a href="projetos-livro-2.html">Livro 2</a></li>
+              <li><a href="projetos-ad-libras.html">AD de Libras</a></li>
+              <li><a href="projetos-site.html">Site do grupo</a></li>
+            </ul>
+          </li>
+
+          <!-- Menu Produções sem submenu -->
+          <li class="submenu">
+            <a href="produções.html">Produções</a>
+          </li>
+
+          <li><a href="contato.html">Contato</a></li>
+          <!-- Link para a página de contato -->
+        </ul>
+
+        <!-- Caixa de pesquisa -->
+        <div class="search-container">
+          <input type="text" placeholder="Buscar..." class="search-box" />
+          <!-- Campo de busca -->
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+          <!-- Ícone de lupa para pesquisa -->
+        </div>
+      </nav>
+    </header>
+
+    <section aria-labelledby="titulo-projetos">
+      <!-- Título "Sobre nós" -->
+      <div class="intro-titulo">
+        <h2 id="titulo-projetos">NOSSOS PROJETOS</h2>
+      </div>
+    </section>
+
+    <h1 class="intro-projetos-titulo">O Príncipe Lindworm</h1>
+    <main class="projetos">
+      <!-- Cada link é um projeto, com imagem à esquerda e texto à direita -->
+      <a href="projetos-livro-1.html" class="projeto esquerda">
+        <img
+          src="assets/Projeto1.png"
+          alt="Imagem do projeto 1"
+          class="projeto-img"
+        />
+        <!-- Imagem do projeto -->
+        <div class="projeto-texto">
+          <p>
+            Neste projeto desenvolvido em conjunto com o grupo PRO.SOM
+            (Tradução, Processo de Criação e Mídias Sonoras) nós visamos
+            publicar, gratuitamente, um livro multiformato impresso. Dentro
+            desse livro haverá um QR code que vai levar a um videolivro com
+            recursos como narração, AD, legendas LSE e janela de Libras, de modo
+            a atender o vasto grupo de pessoas com dificuldade para acessar
+            material impresso tradicional, como, por exemplo, pessoas com
+            dislexia ou com algum tipo de deficiência. O Prince Lindworm é um
+            conto do século XIX é originalmente norueguês e não possui direitos
+            autorais. O conto foi traduzido para o inglês por Svend Grundtvig e
+            nós traduzimos para o português. Porém, a história conta com duas
+            versões: enquanto uma tradução está mais próxima do texto-fonte, a
+            outra tradução foi adaptada para o formato de Leitura Fácil (Easy
+            Read).
+          </p>
+          <!-- Descrição do projeto -->
+        </div>
+      </a>
+    </main>
+
+    <h1 class="intro-projetos-titulo">AD de Libras</h1>
+    <main class="projetos">
+      <!-- Cada link é um projeto, com imagem à esquerda e texto à direita -->
+      <a href="projetos-livro-2.html" class="projeto esquerda">
+        <img
+          src="assets/Projeto2.png"
+          alt="Imagem do projeto 1"
+          class="projeto-img"
+        />
+        <!-- Imagem do projeto -->
+        <div class="projeto-texto">
+          <p>
+            Considerando a escassez de estudos voltados para a audiodescrição
+            (AD) de sinais em Língua Brasileira de Sinais (Libras), este projeto
+            foi criado pelo grupo de pesquisa Tradução e Acessibilidade (TrAce)
+            a fim de investigar o processo de AD de três categorias de sinais da
+            Libras: sinais icônicos, sinais comuns e sinais complexos, para
+            assim propor orientações que auxiliem na escrita de ADs que atendam
+            às necessidades de pessoas cegas e com baixa visão. Contando com o
+            suporte teórico da Tradução Audiovisual Acessível, da Tradução
+            Centrada no Usuário e da Teoria do Escopo de Vermeer, roteiros de AD
+            têm sido construídos e submetidos à análise de intérpretes de Libras
+            e consultores com deficiência visual para a validação dos parâmetros
+            utilizados. A organização criteriosa dos elementos no roteiro, o
+            emprego de comparações, o uso dos cinco parâmetros da Libras para
+            nortear a AD, entre outras estratégias adotadas estão colaborando
+            para a elaboração das audiodescrições.
+          </p>
+          <!-- Descrição do projeto -->
+        </div>
+      </a>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="logo">
+          <img src="assets/TraCe_logo_placeholder.png" alt="Logo do site" />
+        </div>
+        <div class="social-media">
+          <a href="#" class="social-icon instagram">Instagram</a>
+          <a href="#" class="social-icon youtube">YouTube</a>
+          <a href="#" class="social-icon twitter">Twitter</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>TrAce</h3>
+            <ul>
+              <li><a href="#">Sobre Nós</a></li>
+              <li><a href="#">Membros</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Projetos</h3>
+            <ul>
+              <li><a href="#">Projeto X</a></li>
+              <li><a href="#">Projeto Y</a></li>
+              <li><a href="#">Projeto Z</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Produções</h3>
+            <ul>
+              <li><a href="#">Produção 1</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contato</h3>
+            <ul>
+              <li><a href="#">Entre em contato</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <p>&copy; 2025 - Todos os direitos reservados</p>
+          <p>Tradução e Acessibilidade</p>
+          <p>Instituto de Letras da UFBA</p>
+          <p>Salvador, BA</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

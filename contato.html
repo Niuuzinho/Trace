@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento, informando que é um HTML5 -->
+<html lang="pt-br">
+  <!-- Define o idioma da página como português do Brasil -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Define o conjunto de caracteres para UTF-8, que é importante para suportar caracteres especiais -->
+    <title>TrAce - Contato</title>
+    <!-- Título da página, aparece na aba do navegador -->
+    <link rel="stylesheet" href="style-contato.css" />
+    <link rel="stylesheet" href="style-universal.css" />
+    <!-- Link para o arquivo CSS que irá estilizar a página -->
+    <!-- Se quiser adicionar Gotham Rounded como fonte local futuramente, pode usar @font-face no CSS -->
+  </head>
+
+  <body>
+    <head>
+      <!-- Adicionando o link para o Font Awesome, que fornece ícones como o da lupa para a barra de pesquisa -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      />
+    </head>
+
+    <body>
+      <head>
+        <!-- Adicionando o link para o Font Awesome, que fornece ícones como o da lupa para a barra de pesquisa -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+      </head>
+  
+      <!-- Barra de navegação -->
+      <header class="navbar">
+        <nav>
+          <div class="logo">
+            <!-- Logo da página, clicável, que redireciona para a página principal (inicio.html) -->
+            <a href="inicio.html">
+              <img
+                class="logo-img"
+                src="assets/TraCe_logo_placeholder.png"
+                alt="Logo"
+              />
+            </a>
+          </div>
+  
+          <!-- Lista de itens de navegação -->
+          <ul class="navbar-list">
+            <li><a href="inicio.html">Início</a></li>
+  
+            <!-- Menu TrAce com submenu -->
+            <li class="submenu">
+              <a href="#">TrAce</a>
+              <ul class="submenu-list">
+                <!-- Submenus com links para páginas sobre o grupo e os membros -->
+                <li><a href="trace-sobre-nos.html">Sobre nós</a></li>
+                <li><a href="trace-membros.html">Membros</a></li>
+              </ul>
+            </li>
+  
+            <!-- Menu Projetos com submenu -->
+            <li class="submenu">
+              <a href="projetos.html">Projetos</a>
+              <ul class="submenu-list">
+                <!-- Submenus com links para projetos específicos -->
+                <li><a href="projetos-livro-1.html">Príncipe Lindworm</a></li>
+                <li><a href="projetos-livro-2.html">Livro 2</a></li>
+                <li><a href="projetos-ad-libras.html">AD de Libras</a></li>
+                <li><a href="projetos-site.html">Site do grupo</a></li>
+              </ul>
+            </li>
+  
+            <!-- Menu Produções sem submenu -->
+            <li class="submenu">
+              <a href="produções.html">Produções</a>
+            </li>
+  
+            <li><a href="contato.html">Contato</a></li>
+            <!-- Link para a página de contato -->
+          </ul>
+  
+          <!-- Caixa de pesquisa -->
+          <div class="search-container">
+            <input type="text" placeholder="Buscar..." class="search-box" />
+            <!-- Campo de busca -->
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+            <!-- Ícone de lupa para pesquisa -->
+          </div>
+        </nav>
+      </header>
+        <section class="contato-section">
+          <h2 class="contato-titulo">ENTRE EM CONTATO</h2>
+        
+          <form class="form-contato">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea placeholder="Sua mensagem" rows="6" required></textarea>
+            <button type="submit" class="btn-enviar">Enviar</button>
+          </form>
+        </section>
+
+  
+      <!-- Rodapé -->
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="logo">
+            <img src="assets/TraCe_logo_placeholder.png" alt="Logo do site" />
+          </div>
+          <div class="social-media">
+            <a href="#" class="social-icon instagram">Instagram</a>
+            <a href="#" class="social-icon youtube">YouTube</a>
+            <a href="#" class="social-icon twitter">Twitter</a>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <div class="footer-links">
+            <div class="footer-section">
+              <h3>TrAce</h3>
+              <ul>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Membros</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Projetos</h3>
+              <ul>
+                <li><a href="#">Projeto X</a></li>
+                <li><a href="#">Projeto Y</a></li>
+                <li><a href="#">Projeto Z</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Produções</h3>
+              <ul>
+                <li><a href="#">Produção 1</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Contato</h3>
+              <ul>
+                <li><a href="#">Entre em contato</a></li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="footer-info">
+            <p>&copy; 2025 - Todos os direitos reservados</p>
+            <p>Tradução e Acessibilidade</p>
+            <p>Instituto de Letras da UFBA</p>
+            <p>Salvador, BA</p>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>
+  

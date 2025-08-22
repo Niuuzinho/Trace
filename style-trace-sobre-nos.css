@@ -1,0 +1,102 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: "Gotham Rounded", sans-serif;
+  background-color: #fff8e5;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Título "Sobre nós" */
+.intro-titulo h2 {
+  background-color: #ffc95f;
+  color: #9b461f;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0.6rem 2.5rem;
+  border-top-right-radius: 100px;
+  margin: 2rem 2rem 0 0;
+  display: inline-block;
+}
+
+/* Container com "SOBRE NÓS" e a caixa */
+.intro-container {
+  position: relative;
+  margin-top: 0;
+}
+
+/* Título "SOBRE NÓS", que ficará sobre a caixa */
+.intro-sobre-nos-titulo {
+  background-color: #9b461f;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  width: 20%;
+  padding: 0.6rem 1.5rem;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+  z-index: 2; /* Fica por cima da caixa */
+  margin: 0;
+}
+
+/* Estilo do conteúdo principal (sobre nós) */
+.sobre-nos-conteudo {
+  max-width: 1800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column; /* Exibe os itens em coluna */
+  gap: 1.5rem; /* Espaçamento entre os cards de notícia */
+}
+
+/* Estilo de cada card sobre nós*/
+.sobre-nos-card {
+  display: flex;
+  background-color: #f5f5f5;
+  border-radius: 100px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: inherit; /* Faz com que o texto herde a cor original */
+}
+
+/* Estilo da imagem dentro do card */
+.sobre-nos-img {
+  width: 50%; /* A imagem ocupa 40% do card */
+  object-fit: cover; /* A imagem é ajustada para cobrir a área disponível */
+}
+
+/* Estilo do texto dentro do card */
+.sobre-nos-texto {
+  padding: 1rem;
+  width: 50%; /* O texto ocupa 60% do card */
+  display: flex;
+  flex-direction: column; /* Exibe o texto em coluna */
+  justify-content: center; /* Centraliza o texto verticalmente */
+}
+
+/* Estilo do parágrafo dentro do card */
+.sobre-nos-texto p {
+  font-size: 1.7rem; /* Tamanho padrão da fonte */
+  color: #333; /* Cor do texto */
+}
+
+/* organização do card*/
+.sobre-nos.esquerda {
+  flex-direction: row; /* Imagem à esquerda, texto à direita */
+}
+/* Rodapé */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

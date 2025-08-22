@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TrAce - Livro 2</title>
+    <link rel="stylesheet" href="style-projetos-individuais.css" />
+    <link rel="stylesheet" href="style-universal.css" />
+  </head>
+  <body>
+    <head>
+      <!-- Adicionando o link para o Font Awesome, que fornece ícones como o da lupa para a barra de pesquisa -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      />
+    </head>
+
+    <!-- Barra de navegação -->
+    <header class="navbar">
+      <nav>
+        <div class="logo">
+          <!-- Logo da página, clicável, que redireciona para a página principal (inicio.html) -->
+          <a href="inicio.html">
+            <img
+              class="logo-img"
+              src="assets/TraCe_logo_placeholder.png"
+              alt="Logo"
+            />
+          </a>
+        </div>
+
+        <!-- Lista de itens de navegação -->
+        <ul class="navbar-list">
+          <li><a href="inicio.html">Início</a></li>
+
+          <!-- Menu TrAce com submenu -->
+          <li class="submenu">
+            <a href="#">TrAce</a>
+            <ul class="submenu-list">
+              <!-- Submenus com links para páginas sobre o grupo e os membros -->
+              <li><a href="trace-sobre-nos.html">Sobre nós</a></li>
+              <li><a href="trace-membros.html">Membros</a></li>
+            </ul>
+          </li>
+
+          <!-- Menu Projetos com submenu -->
+          <li class="submenu">
+            <a href="projetos.html">Projetos</a>
+            <ul class="submenu-list">
+              <!-- Submenus com links para projetos específicos -->
+              <li><a href="projetos-livro-1.html">Príncipe Lindworm</a></li>
+              <li><a href="projetos-livro-2.html">Livro 2</a></li>
+              <li><a href="projetos-ad-libras.html">AD de Libras</a></li>
+              <li><a href="projetos-site.html">Site do grupo</a></li>
+            </ul>
+          </li>
+
+          <!-- Menu Produções sem submenu -->
+          <li class="submenu">
+            <a href="produções.html">Produções</a>
+          </li>
+
+          <li><a href="contato.html">Contato</a></li>
+          <!-- Link para a página de contato -->
+        </ul>
+
+        <!-- Caixa de pesquisa -->
+        <div class="search-container">
+          <input type="text" placeholder="Buscar..." class="search-box" />
+          <!-- Campo de busca -->
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+          <!-- Ícone de lupa para pesquisa -->
+        </div>
+      </nav>
+    </header>
+
+    <section aria-labelledby="titulo-projeto">
+      <!-- Título "Projetos" -->
+      <div class="intro-subtitulo">
+        <h2 id="titulo-projeto">Era uma vez numa terra muito distante...</h2>
+      </div>
+
+      <!-- Título "MEMBROS" sobreposto à caixa -->
+      <div class="intro-container">
+        <h1 class="intro-projeto-titulo">Livro 2</h1>
+      </div>
+
+      <section class="grid-bloco">
+        <img
+          src="assets/Projeto1_3.png"
+          alt="Descrição da imagem"
+          class="grid-img"
+        />
+
+        <div class="grid-conteudo">
+          <h2 class="grid-titulo">Introdução</h2>
+          <p class="grid-texto">
+            Dentro desse livro haverá um QR code que vai levar a um videolivro
+            com recursos como narração, AD, legendas LSE e janela de Libras, de
+            modo a atender o vasto grupo de pessoas com dificuldade para acessar
+            material impresso tradicional, como, por exemplo, pessoas com
+            dislexia ou com algum tipo de deficiência. O Príncipe Lindworm é um
+            conto do século XIX é originalmente norueguês e não possui direitos
+            autorais. O conto foi traduzido para o inglês por Svend Grundtvig e
+            nós traduzimos para o português. Porém, a história conta com duas
+            versões: enquanto uma tradução está mais próxima do texto-fonte, a
+            outra tradução foi adaptada para o formato de Leitura Fácil (Easy
+            Read).
+          </p>
+          <a href="#" class="grid-botao">BAIXAR PDF</a>
+        </div>
+      </section>
+      <section class="carrossel-container">
+        <button class="carrossel-seta seta-esquerda">❮</button>
+
+        <div class="carrossel-imagens">
+          <img
+            src="assets/Projeto1_2.png"
+            alt="Imagem 1"
+            class="carrossel-img"
+          />
+          <img
+            src="assets/Projeto1_2.png"
+            alt="Imagem 2"
+            class="carrossel-img"
+          />
+          <img
+            src="assets/Projeto1_2.png"
+            alt="Imagem 3"
+            class="carrossel-img"
+          />
+          <img
+            src="assets/Projeto1_2.png"
+            alt="Imagem 4"
+            class="carrossel-img"
+          />
+        </div>
+
+        <button class="carrossel-seta seta-direita">❯</button>
+      </section>
+
+      <h2 class="video-titulo">Vídeo</h2>
+      <hr class="linha-video" />
+      <section class="video-section">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            title="Vídeo institucional"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="artigos-selecionados">
+        <h2 class="artigos-titulo">Artigos Selecionados</h2>
+        <hr class="linha-artigos" />
+
+        <div class="carrossel-artigos">
+          <div class="card-artigo">Artigo topsecret 1</div>
+          <div class="card-artigo">Artigo topsecret 2 só que maior</div>
+          <div class="card-artigo">
+            Artigo topsecret 3 só que beeeeeeeem maior
+          </div>
+          <div class="card-artigo">Artigo 4</div>
+          <!-- Adicione mais cards se quiser -->
+        </div>
+      </section>
+
+      <section class="secao-equipe">
+  <h2 class="equipe-titulo">Equipe</h2>
+  <hr class="linha-equipe" />
+
+  <div class="carrossel-equipe">
+    <!-- Card de membro -->
+    <div class="card-membro">
+      <img src="assets/TraceCards/profile/ManoelaCristina.jpg" alt="Manoela Cristina da Silva" class="foto-membro" />
+      <h3 class="nome-membro">Manoela Cristina da Silva</h3>
+      <p class="papel-equipe">Coordenadora do grupo</p>
+      <p class="papel-projeto">Orientadora</p>
+    </div>
+
+    
+    <div class="card-membro">
+      <img src="assets/placeholders/a.jpg" alt="a" class="foto-membro" />
+      <h3 class="nome-membro">Alguém</h3>
+      <p class="papel-equipe">Membro</p>
+      <p class="papel-projeto">Tradutor</p>
+    </div>
+    <div class="card-membro">
+      <img src="assets/placeholders/b.jpg" alt="a" class="foto-membro" />
+      <h3 class="nome-membro">Balguém</h3>
+      <p class="papel-equipe">Consultor</p>
+      <p class="papel-projeto">Ilustrador</p>
+    </div>
+    
+    <!-- Duplicar os cards conforme necessário -->
+    
+    </div>
+  </div>
+
+  <section class="secao-projetos">
+    <h2 class="projetos-titulo">Mais Histórias</h2>
+    <hr class="linha-projetos">
+  
+    <div class="carrossel-projetos">
+      <a href="#" class="card-projeto">
+        <img src="assets/placeholders/livro2.jpg" alt="Projeto 1" class="foto-projeto">
+        <div class="nome-projeto">Projeto A</div>
+      </a>
+      
+      <a href="#" class="card-projeto">
+        <img src="assets/placeholders/livro.jpg" alt="Projeto 2" class="foto-projeto">
+        <div class="nome-projeto">Projeto B</div>
+      </a>
+      <!-- Adicione mais cards conforme necessário -->
+    </div>
+  </section>
+  
+</section>
+
+<!-- Rodapé -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="logo">
+      <img src="assets/TraCe_logo_placeholder.png" alt="Logo do site" />
+    </div>
+    <div class="social-media">
+      <a href="#" class="social-icon instagram">Instagram</a>
+      <a href="#" class="social-icon youtube">YouTube</a>
+      <a href="#" class="social-icon twitter">Twitter</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-links">
+      <div class="footer-section">
+        <h3>TrAce</h3>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Membros</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Projetos</h3>
+        <ul>
+          <li><a href="#">Projeto X</a></li>
+          <li><a href="#">Projeto Y</a></li>
+          <li><a href="#">Projeto Z</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Produções</h3>
+        <ul>
+          <li><a href="#">Produção 1</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="#">Entre em contato</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-info">
+      <p>&copy; 2025 - Todos os direitos reservados</p>
+      <p>Tradução e Acessibilidade</p>
+      <p>Instituto de Letras da UFBA</p>
+      <p>Salvador, BA</p>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>

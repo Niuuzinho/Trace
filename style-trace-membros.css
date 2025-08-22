@@ -1,0 +1,216 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: "Gotham Rounded", sans-serif;
+  background-color: #fff8e5;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Título "Sobre nós" */
+.intro-titulo h2 {
+  background-color: #ffc95f;
+  color: #9b461f;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0.6rem 2.5rem;
+  border-top-right-radius: 100px;
+  margin: 2rem 2rem 0 0;
+  display: inline-block;
+}
+
+/* Container com "MEMBROS" e a caixa */
+.intro-container {
+  position: relative;
+  margin-top: 0;
+}
+
+/* Título "MEMBROS", que ficará sobre a caixa */
+.intro-membros-titulo {
+  background-color: #9b461f;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  width: 20%;
+  padding: 0.6rem 1.5rem;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+  z-index: 2; /* Fica por cima da caixa */
+  margin: 0;
+}
+
+/* Caixa com a descrição */
+.intro-descricao {
+  background-color: #00a996;
+  color: white;
+  font-size: 2rem;
+  line-height: 1.6;
+  font-weight: 500;
+  padding: 2rem;
+  border-radius: 60px;
+  text-align: left;
+  position: relative;
+  top: -2rem; /* Move a caixa um pouco pra cima, atrás de "MEMBROS" */
+  z-index: 1; /* Atrás do título */
+  margin: -0.1rem auto 0; /* Centraliza horizontalmente */
+  max-width: 1500px;
+}
+
+.titulo-secao {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: 600;
+  position: relative;
+}
+
+.titulo-secao::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #00a996;
+  margin: 0.5rem auto -1.5rem;
+  border-radius: 4px;
+}
+
+/* Grid de exibição dos membros */
+.grid-membros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centraliza os cards */
+  gap: 2rem; /* espaçamento entre os cards */
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+/* Estilo base do card */
+.membro-card {
+  width: 280px;
+  background-color: #088884;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: margin 0.3s ease, box-shadow 0.3s ease;
+  height: 480px; /* altura fixa para todos os cards */
+  justify-content: space-between; /* espaçamento entre topo e base */
+}
+/* Efeito ao passar o mouse */
+.membro-card:hover {
+  margin-top: -5px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Foto do membro */
+.membro-foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  margin-bottom: 1rem;
+}
+
+/* Nome do membro */
+.membro-nome {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.2rem;
+  min-height: 1.7rem;
+}
+
+/* Função do membro */
+.membro-funcao {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0.4rem;
+  min-height: 1.4rem;
+  background-color: #00a996;
+  padding: 0.2rem 1rem;
+  border-radius: 50px 50px 100px 100px;
+}
+
+/* Especialidades do membro */
+.membro-especialidades {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #000000;
+  padding: 0.2rem 1rem;
+  border-radius: 25px;
+}
+/* Container dos botões de redes sociais */
+.membro-redes {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+/* Botões circulares das redes sociais */
+.btn-circular {
+  width: 40px;
+  height: 40px;
+  background-color: #ffc95f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  color: #9b461f;
+}
+
+.btn-circular:hover {
+  background-color: #9b461f;
+  color: #ffc95f;
+}
+
+.btn-circular img {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+/* Botão de contato por email */
+.btn-contato {
+  display: inline-block;
+  background-color: #fff;
+  color: #000000;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-contato:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

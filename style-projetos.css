@@ -1,0 +1,108 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: "Gotham Rounded", sans-serif;
+  background-color: #fff8e5;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Título "Projetos" */
+.intro-titulo h2 {
+  background-color: #088884;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 700;
+  padding: 0.6rem 3rem 0.6rem 3.5rem;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  margin: 2rem 2rem 0 0;
+  display: inline-block;
+}
+
+/* Container com "SOBRE NÓS" e a caixa */
+.intro-container {
+  position: relative;
+  margin-top: 0;
+}
+
+/* Título "SOBRE NÓS", que ficará sobre a caixa */
+.intro-projetos-titulo {
+  background-color: #20a39e;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 100px 100px 0px 100px;
+  margin: 2rem 2rem 0 1rem;
+  display: inline-block;
+  height: auto;
+}
+
+/* Estilo do conteúdo principal (notícias) */
+.projetos {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column; /* Exibe os itens em coluna */
+  gap: 1.5rem; /* Espaçamento entre os cards de notícia */
+}
+
+/* Estilo de cada card de notícia */
+.projeto {
+  display: flex;
+  background-color: #f5f5f5;
+  border-radius: 0px 25px 25px 25px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: inherit; /* Faz com que o texto herde a cor original */
+}
+
+/* Estilo da imagem dentro do card */
+.projeto-img {
+  width: 40%; /* A imagem ocupa 40% do card */
+  object-fit: cover; /* A imagem é ajustada para cobrir a área disponível */
+}
+
+/* Estilo do texto dentro do card */
+.projeto-texto {
+  padding: 1rem;
+  width: 60%; /* O texto ocupa 60% do card */
+  display: flex;
+  flex-direction: column; /* Exibe o texto em coluna */
+  justify-content: center; /* Centraliza o texto verticalmente */
+}
+
+/* Estilo do título dentro do card */
+.projeto-texto h2 {
+  margin-bottom: 0.5rem; /* Espaço abaixo do título */
+  font-size: 1.2rem; /* Tamanho maior para o título */
+}
+
+/* Estilo do parágrafo dentro do card */
+.projeto-texto p {
+  font-size: 1.3rem; /* Tamanho padrão da fonte */
+  color: #333; /* Cor do texto */
+}
+
+/* Estilo alternado para a ordem das notícias (imagem à esquerda ou direita) */
+.projeto.esquerda {
+  flex-direction: row; /* Imagem à esquerda, texto à direita */
+}
+
+/* Rodapé */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

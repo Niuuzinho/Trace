@@ -1,0 +1,214 @@
+/* Reset de margens e preenchimentos, garantindo que o layout fique consistente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que o padding e margin não afetem o tamanho total dos elementos */
+}
+
+/* Definindo estilo básico para o corpo da página */
+body {
+  font-family: "Gotham Rounded", sans-serif; /* Fonte personalizada */
+  background-color: #fff8e5; /* Cor de fundo suave */
+  color: #111; /* Cor de texto escura */
+  line-height: 1.6; /* Espaçamento entre as linhas para maior legibilidade */
+}
+
+/* Banner */
+.banner img {
+  width: 100%; /* A imagem ocupa toda a largura */
+  height: auto; /* A altura é ajustada automaticamente para manter a proporção */
+  display: block; /* Remove o espaço abaixo da imagem */
+}
+
+/* Estilo da chamada para projetos */
+.chamada-projetos {
+  background-color: #088884; /* Cor verde vibrante de fundo */
+  color: white;
+  font-size: 50px; /* Tamanho grande da fonte */
+  padding: 1rem 2rem; /* Espaçamento interno */
+  max-width: 50%; /* Largura máxima */
+  margin-top: 2rem; /* Não deixa margem à esquerda */
+  margin-left: 0; /* Não deixa margem à esquerda */
+  border-top-right-radius: 100px; /* Arredonda os cantos superiores */
+  border-bottom-right-radius: 100px; /* Arredonda os cantos inferiores */
+  border-top-left-radius: 0; /* Sem arredondamento no canto superior esquerdo */
+  border-bottom-left-radius: 0; /* Sem arredondamento no canto inferior esquerdo */
+}
+
+/* Estilo do conteúdo principal (notícias) */
+.noticias {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column; /* Exibe os itens em coluna */
+  gap: 1.5rem; /* Espaçamento entre os cards de notícia */
+}
+
+/* Estilo de cada card de notícia */
+.noticia {
+  display: flex;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: inherit; /* Faz com que o texto herde a cor original */
+}
+
+/* Estilo da imagem dentro do card */
+.noticia-img {
+  width: 40%; /* A imagem ocupa 40% do card */
+  object-fit: cover; /* A imagem é ajustada para cobrir a área disponível */
+}
+
+/* Estilo do texto dentro do card */
+.noticia-texto {
+  padding: 1rem;
+  width: 60%; /* O texto ocupa 60% do card */
+  display: flex;
+  flex-direction: column; /* Exibe o texto em coluna */
+  justify-content: center; /* Centraliza o texto verticalmente */
+}
+
+/* Estilo do título dentro do card */
+.noticia-texto h2 {
+  margin-bottom: 0.5rem; /* Espaço abaixo do título */
+  font-size: 1.2rem; /* Tamanho maior para o título */
+}
+
+/* Estilo do parágrafo dentro do card */
+.noticia-texto p {
+  font-size: 1rem; /* Tamanho padrão da fonte */
+  color: #333; /* Cor do texto */
+}
+
+/* Estilo alternado para a ordem das notícias (imagem à esquerda ou direita) */
+.noticia.esquerda {
+  flex-direction: row; /* Imagem à esquerda, texto à direita */
+}
+
+.noticia.direita {
+  flex-direction: row-reverse; /* Imagem à direita, texto à esquerda */
+}
+
+/* Efeito de hover para os cards de notícia */
+.noticia:hover {
+  transform: scale(1.05); /* Aumenta um pouco o tamanho do card */
+  transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* Estilo geral do footer */
+.footer {
+  background-color: #088884; /* Fundo verde */
+  padding: 2rem 1rem;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Parte de cima do footer */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  width: 300px;
+  height: auto;
+  color: #fff;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #333;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #fff;
+  color: #20a29e; /* Cor da rede social ao passar o mouse */
+}
+
+/* Linha branca dividindo a parte de cima e a parte de baixo */
+.footer-top {
+  border-bottom: 2px solid white;
+  padding-bottom: 1.5rem; /* Ajuste para garantir que o conteúdo não se sobreponha à linha */
+}
+
+/* Parte de baixo do footer */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Links das páginas com divisão vertical | */
+.footer-links {
+  display: flex;
+  gap: 2rem; /* Espaço entre as seções */
+}
+
+.footer-section h3 {
+  margin-bottom: 1rem;
+  color: white; /* Títulos das seções em branco */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: white; /* Links em branco */
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-info {
+  text-align: right;
+  font-size: 1.3rem;
+  margin-left: auto;
+  color: white; /* Texto em branco */
+}
+
+.footer-info p {
+  margin: 0.5rem 0;
+}
+
+/* Estilo para o separador vertical (|) entre os links */
+.footer-section:not(:last-child) {
+  position: relative;
+}
+
+.footer-section:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: -1rem;
+  top: -0.5rem; /* Ajustado para mover a linha um pouco para cima */
+  transform: translateY(0%);
+  color: white;
+  font-size: 1.5rem;
+}

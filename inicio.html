@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento, informando que é um HTML5 -->
+<html lang="pt-br">
+  <!-- Define o idioma da página como português do Brasil -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Define o conjunto de caracteres para UTF-8, que é importante para suportar caracteres especiais -->
+    <title>TrAce - Início</title>
+    <!-- Título da página, aparece na aba do navegador -->
+    <link rel="stylesheet" href="style-inicio.css" />
+    <link rel="stylesheet" href="style-universal.css" />
+    <!-- Link para o arquivo CSS que irá estilizar a página -->
+  </head>
+
+  <body>
+    <head>
+      <!-- Adicionando o link para o Font Awesome, que fornece ícones como o da lupa para a barra de pesquisa -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      />
+    </head>
+
+    <!-- Barra de navegação -->
+    <header class="navbar">
+      <nav>
+        <div class="logo">
+          <!-- Logo da página, clicável, que redireciona para a página principal (inicio.html) -->
+          <a href="inicio.html">
+            <img
+              class="logo-img"
+              src="assets/TraCe_logo_placeholder.png"
+              alt="Logo"
+            />
+          </a>
+        </div>
+
+        <!-- Lista de itens de navegação -->
+        <ul class="navbar-list">
+          <li><a href="inicio.html">Início</a></li>
+
+          <!-- Menu TrAce com submenu -->
+          <li class="submenu">
+            <a href="#">TrAce</a>
+            <ul class="submenu-list">
+              <!-- Submenus com links para páginas sobre o grupo e os membros -->
+              <li><a href="trace-sobre-nos.html">Sobre nós</a></li>
+              <li><a href="trace-membros.html">Membros</a></li>
+            </ul>
+          </li>
+
+          <!-- Menu Projetos com submenu -->
+          <li class="submenu">
+            <a href="projetos.html">Projetos</a>
+            <ul class="submenu-list">
+              <!-- Submenus com links para projetos específicos -->
+              <li><a href="projetos-livro-1.html">Príncipe Lindworm</a></li>
+              <li><a href="projetos-livro-2.html">Livro 2</a></li>
+              <li><a href="projetos-ad-libras.html">AD de Libras</a></li>
+              <li><a href="projetos-site.html">Site do grupo</a></li>
+            </ul>
+          </li>
+
+          <!-- Menu Produções sem submenu -->
+          <li class="submenu">
+            <a href="produções.html">Produções</a>
+          </li>
+
+          <li><a href="contato.html">Contato</a></li>
+          <!-- Link para a página de contato -->
+        </ul>
+
+        <!-- Caixa de pesquisa -->
+        <div class="search-container">
+          <input type="text" placeholder="Buscar..." class="search-box" />
+          <!-- Campo de busca -->
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+          <!-- Ícone de lupa para pesquisa -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- Seção de Banner com imagem -->
+    <section class="banner">
+      <img src="assets/Banner1.png" alt="Banner do site" />
+      <!-- Imagem do banner -->
+    </section>
+
+    <!-- Seção de chamada para projetos -->
+    <section class="chamada-projetos">
+      <p>Acompanhe nossos projetos</p>
+      <!-- Texto chamando a atenção para os projetos -->
+    </section>
+
+    <!-- Blocos de notícias (projetos) -->
+    <main class="noticias">
+      <!-- Cada link é um projeto, com imagem à esquerda e texto à direita -->
+      <a href="projetos-livro-1.html" class="noticia esquerda">
+        <img
+          src="assets/Projeto1.png"
+          alt="Imagem do projeto 1"
+          class="noticia-img"
+        />
+        <!-- Imagem do projeto -->
+        <div class="noticia-texto">
+          <h2>Título do Projeto 1</h2>
+          <!-- Título do projeto -->
+          <p>
+            Resumo ou conteúdo do projeto. Texto que aparece ao lado da imagem.
+          </p>
+          <!-- Descrição do projeto -->
+        </div>
+      </a>
+
+      <a href="projetos-livro-2.html" class="noticia direita">
+        <img
+          src="assets/Projeto2.png"
+          alt="Imagem do projeto 2"
+          class="noticia-img"
+        />
+        <div class="noticia-texto">
+          <h2>Título do Projeto 2</h2>
+          <p>
+            Outro conteúdo importante do projeto apresentado em forma de card
+            horizontal.
+          </p>
+        </div>
+      </a>
+
+      <!-- Mais projetos -->
+      <a href="projetos-livro-1.html" class="noticia esquerda">
+        <img
+          src="assets/Projeto1.png"
+          alt="Imagem do projeto 1"
+          class="noticia-img"
+        />
+        <div class="noticia-texto">
+          <h2>Título do Projeto 1</h2>
+          <p>
+            Resumo ou conteúdo do projeto. Texto que aparece ao lado da imagem.
+          </p>
+        </div>
+      </a>
+
+      <a href="projetos-livro-2.html" class="noticia direita">
+        <img
+          src="assets/Projeto2.png"
+          alt="Imagem do projeto 2"
+          class="noticia-img"
+        />
+        <div class="noticia-texto">
+          <h2>Título do Projeto 2</h2>
+          <p>
+            Outro conteúdo importante do projeto apresentado em forma de card
+            horizontal.
+          </p>
+        </div>
+      </a>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="logo">
+          <img src="assets/TraCe_logo_placeholder.png" alt="Logo do site" />
+        </div>
+        <div class="social-media">
+          <a href="#" class="social-icon instagram">Instagram</a>
+          <a href="#" class="social-icon youtube">YouTube</a>
+          <a href="#" class="social-icon twitter">Twitter</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>TrAce</h3>
+            <ul>
+              <li><a href="#">Sobre Nós</a></li>
+              <li><a href="#">Membros</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Projetos</h3>
+            <ul>
+              <li><a href="#">Projeto X</a></li>
+              <li><a href="#">Projeto Y</a></li>
+              <li><a href="#">Projeto Z</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Produções</h3>
+            <ul>
+              <li><a href="#">Produção 1</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contato</h3>
+            <ul>
+              <li><a href="#">Entre em contato</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <p>&copy; 2025 - Todos os direitos reservados</p>
+          <p>Tradução e Acessibilidade</p>
+          <p>Instituto de Letras da UFBA</p>
+          <p>Salvador, BA</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

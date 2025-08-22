@@ -1,0 +1,124 @@
+.producoes-pagina {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff8e5;
+}
+
+.titulo-producoes {
+  font-size: 5rem;
+  color: #9b461f;
+  background-color: #ffc95f;
+  padding: 0.6rem 5rem;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  margin-bottom: 2rem;
+  align-self: flex-start;
+  margin-left: -2rem;
+}
+
+.conteudo-producoes {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-lateral {
+  max-width: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+}
+
+/* Título com fundo */
+.menu-topo {
+  background-color: #9b461f;
+  padding: 1rem;
+}
+
+.menu-titulo {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Lista com fundo diferente */
+.menu-lista {
+  background-color: #ffd98e;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+}
+
+.menu-lista li {
+  border-bottom: 1px solid #d3a354; /* Borda entre os itens */
+  display: block; /* Garante que os itens ocupem toda a largura */
+  padding: 0; /* Remover qualquer padding extra para todos os itens */
+}
+
+.menu-lista a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: block;
+  width: 100%; /* Ocupa toda a largura */
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease;
+}
+
+.menu-lista a:hover {
+  background-color: #e0e0e0;
+}
+
+/* Ajustes no último item */
+.menu-lista li:last-child a {
+  padding-bottom: 0.5rem; /* Ajuste do padding para o último item */
+}
+
+/* Cards centrais */
+.cards-artigos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-artigo {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  max-width: 600px;
+  margin: 0 auto;
+  transition: transform 0.2s ease;
+}
+
+.card-artigo:hover {
+  transform: translateY(-4px);
+}
+
+.artigo-topo {
+  background-color: #9b461f; /* cor para o topo com título */
+  padding: 1rem 1.5rem;
+}
+
+.titulo-artigo {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.artigo-info {
+  background-color: #f6f6f6; /* cor para o corpo do card */
+  padding: 1rem 1.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}

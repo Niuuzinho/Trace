@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TrAce - Sobre Nós</title>
+    <link rel="stylesheet" href="style-trace-sobre-nos.css" />
+    <link rel="stylesheet" href="style-universal.css" />
+  </head>
+  <body>
+    <head>
+      <!-- Adicionando o link para o Font Awesome, que fornece ícones como o da lupa para a barra de pesquisa -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      /></head
+    ><!-- Barra de navegação -->
+    <header class="navbar">
+      <nav>
+        <div class="logo">
+          <!-- Logo da página, clicável, que redireciona para a página principal (inicio.html) -->
+          <a href="inicio.html">
+            <img
+              class="logo-img"
+              src="assets/TraCe_logo_placeholder.png"
+              alt="Logo"
+            />
+          </a>
+        </div>
+
+        <!-- Lista de itens de navegação -->
+        <ul class="navbar-list">
+          <li><a href="inicio.html">Início</a></li>
+
+          <!-- Menu TrAce com submenu -->
+          <li class="submenu">
+            <a href="#">TrAce</a>
+            <ul class="submenu-list">
+              <!-- Submenus com links para páginas sobre o grupo e os membros -->
+              <li><a href="trace-sobre-nos.html">Sobre nós</a></li>
+              <li><a href="trace-membros.html">Membros</a></li>
+            </ul>
+          </li>
+
+          <!-- Menu Projetos com submenu -->
+          <li class="submenu">
+            <a href="projetos.html">Projetos</a>
+            <ul class="submenu-list">
+              <!-- Submenus com links para projetos específicos -->
+              <li><a href="projetos-livro-1.html">Príncipe Lindworm</a></li>
+              <li><a href="projetos-livro-2.html">Livro 2</a></li>
+              <li><a href="projetos-ad-libras">AD de Libras</a></li>
+              <li><a href="projetos-site">Site do grupo</a></li>
+            </ul>
+          </li>
+
+          <!-- Menu Produções sem submenu -->
+          <li class="submenu">
+            <a href="produções.html">Produções</a>
+          </li>
+
+          <li><a href="contato.html">Contato</a></li>
+          <!-- Link para a página de contato -->
+        </ul>
+
+        <!-- Caixa de pesquisa -->
+        <div class="search-container">
+          <input type="text" placeholder="Buscar..." class="search-box" />
+          <!-- Campo de busca -->
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+          <!-- Ícone de lupa para pesquisa -->
+        </div>
+      </nav>
+    </header>
+
+    <section aria-labelledby="titulo-sobre-nos">
+      <!-- Título "Sobre nós" -->
+      <div class="intro-titulo">
+        <h2 id="titulo-trace">TrAce</h2>
+      </div>
+
+      <!-- Título "MEMBROS" sobreposto à caixa -->
+      <div class="intro-container">
+        <h1 class="intro-sobre-nos-titulo">SOBRE NÓS</h1>
+      </div>
+    </section>
+
+    <main class="sobre-nos-conteudo esquerda">
+      <!-- Cada link é um projeto, com imagem à esquerda e texto à direita -->
+      <div class="sobre-nos-card esquerda">
+        <img
+          src="assets/placeholders/Quem_Somos_Trace.png"
+          alt="Imagem sobre nós"
+          class="sobre-nos-img"
+        />
+        <!-- Imagem do projeto -->
+        <div class="sobre-nos-texto">
+          <p>
+            Dentro desse livro haverá um QR code que vai levar a um videolivro
+            com recursos como narração, AD, legendas LSE e janela de Libras, de
+            modo a atender o vasto grupo de pessoas com dificuldade para acessar
+            material impresso tradicional, como, por exemplo, pessoas com
+            dislexia ou com algum tipo de deficiência. O Príncipe Lindworm é um
+            conto do século XIX é originalmente norueguês e não possui direitos
+            autorais. O conto foi traduzido para o inglês por Svend Grundtvig e
+            nós traduzimos para o português. Porém, a história conta com duas
+            versões: enquanto uma tradução está mais próxima do texto-fonte, a
+            outra tradução foi adaptada para o formato de Leitura Fácil (Easy
+            Read).
+          </p>
+          <!-- Descrição do projeto -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="logo">
+          <img src="assets/TraCe_logo_placeholder.png" alt="Logo do site" />
+        </div>
+        <div class="social-media">
+          <a href="#" class="social-icon instagram">Instagram</a>
+          <a href="#" class="social-icon youtube">YouTube</a>
+          <a href="#" class="social-icon twitter">Twitter</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>TrAce</h3>
+            <ul>
+              <li><a href="#">Sobre Nós</a></li>
+              <li><a href="#">Membros</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Projetos</h3>
+            <ul>
+              <li><a href="#">Projeto X</a></li>
+              <li><a href="#">Projeto Y</a></li>
+              <li><a href="#">Projeto Z</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Produções</h3>
+            <ul>
+              <li><a href="#">Produção 1</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contato</h3>
+            <ul>
+              <li><a href="#">Entre em contato</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <p>&copy; 2025 - Todos os direitos reservados</p>
+          <p>Tradução e Acessibilidade</p>
+          <p>Instituto de Letras da UFBA</p>
+          <p>Salvador, BA</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
